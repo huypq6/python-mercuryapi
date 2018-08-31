@@ -1,4 +1,4 @@
-APIVER ?= 1.31.0.33
+APIVER ?= 1.29.4.34
 PYTHON ?= $(shell { command -v python3 || command -v python; } 2>/dev/null)
 
 .PHONY: all mercuryapi install
@@ -24,4 +24,4 @@ mercuryapi-$(APIVER)/.done: mercuryapi-$(APIVER).zip
 	touch mercuryapi-$(APIVER)/.done
 
 mercuryapi-$(APIVER).zip:
-	wget http://www.thingmagic.com/images/Downloads/software/mercuryapi-$(APIVER).zip
+	wget https://www.jadaktech.com/wp-content/uploads/2018/02/mercuryapi-$(APIVER).zip
